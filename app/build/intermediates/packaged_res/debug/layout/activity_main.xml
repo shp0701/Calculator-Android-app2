@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:stretchColumns="*"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="@string/calculator"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:hint="@string/result"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+
+    <TableRow
+        android:layout_width="350dp"
+        android:layout_height="80dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/off"
+            android:layout_width="30dp"
+            android:layout_height="80dp"
+            android:background="#DF7971"
+            android:text="@string/off" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ac"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="#ECF1BC"
+            android:text="@string/ac" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/na"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:background="#D0FEB7"
+            android:text="@string/na" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/go"
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:background="#D0FEB7"
+            android:text="@string/go" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number1"
+            android:layout_height="match_parent"
+            android:background="#F4BFBF"
+            android:text="@string/_1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number2"
+            android:layout_height="match_parent"
+            android:background="#F4BFBF"
+            android:text="@string/_2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number3"
+            android:layout_height="match_parent"
+            android:background="#F4BFBF"
+            android:text="@string/_3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ma"
+            android:layout_height="match_parent"
+            android:background="#D0FEB7"
+            android:text="@string/ma" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number4"
+            android:layout_height="match_parent"
+            android:background="#F4BFBF"
+            android:text="@string/_4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number5"
+            android:layout_height="match_parent"
+            android:background="#F4BFBF"
+            android:text="@string/_5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number6"
+            android:layout_height="match_parent"
+            android:background="#F4BFBF"
+            android:text="@string/_6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pl"
+            android:layout_height="match_parent"
+            android:background="#D0FEB7"
+            android:text="@string/pl" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number7"
+            android:layout_height="match_parent"
+            android:background="#F4BFBF"
+            android:text="@string/_7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number8"
+            android:layout_height="match_parent"
+            android:background="#F4BFBF"
+            android:text="@string/_8" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number9"
+            android:layout_height="match_parent"
+            android:background="#F4BFBF"
+            android:text="@string/_9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/eq"
+            android:layout_height="match_parent"
+            android:background="#D0FEB7"
+            android:text="@string/eq" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/number0"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_span="4"
+            android:background="#F4BFBF"
+            android:text="@string/_0" />
+    </TableRow>
+</TableLayout>
